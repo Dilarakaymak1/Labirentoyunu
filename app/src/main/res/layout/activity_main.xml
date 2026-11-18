@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101018"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Çıkışa ulaş!"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <com.example.labirentoyunu.MazeView
+        android:id="@+id/mazeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Karakter seçme butonları -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPlayerChar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oyuncu" />
+
+        <Button
+            android:id="@+id/btnEnemyChar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Düşman" />
+    </LinearLayout>
+
+    <!-- Yön tuşları -->
+    <Button
+        android:id="@+id/btnUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="↑" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="←" />
+
+        <Button
+            android:id="@+id/btnDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="↓" />
+
+        <Button
+            android:id="@+id/btnRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="→" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnNewMaze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Yeni Labirent" />
+
+</LinearLayout>
